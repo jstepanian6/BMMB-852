@@ -81,6 +81,7 @@ That outputs bwa manual:
     Note: Please read the man page for detailed description of the command line and options.
 ## Setting up the terminal 
 I've been an user of ubuntu terminal for a while and I already had it set up using the GNOME dark scheme with a customized color palette 
+
 ## Create the bioinfo environment
 
     curl http://data.biostarhandbook.com/install.sh | bash
