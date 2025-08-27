@@ -133,4 +133,35 @@ So now I have the following structure:
         `-- snpEff_summary.html
     
     7 directories, 27 files
+## Questions 5 to 10 
+5. What version is your samtools command in the bioinfo environment?
+    Program: samtools (Tools for alignments in the SAM format)
+    Version: 1.22.1 (using htslib 1.22.1)
+6. Show commands needed to create a nested directory structure.
+        `mkdir -p dir1/dir2/dir3/dir4`
+    then check the results using `tree` command
+
+    tree
+    .
+    `-- dir1
+        `-- dir2
+            `-- dir3
+                `-- dir4
+    
+    5 directories, 0 files
+7. Show commands that create files in different directories
+   `touch dir1/dir2/example.txt`
+8. Show how to access these files using relative and absolute paths.
+     jstepanian@jstepanian ~/Documents/AppliedBioinfo/work/dir
+    $ tree
+    .
+    `-- dir1
+        `-- dir2
+            |-- dir3
+            |   `-- dir4
+            `-- example.txt
+    
+    5 directories, 1 file
+
+
 
