@@ -141,27 +141,28 @@ So now I have the following structure:
         `mkdir -p dir1/dir2/dir3/dir4`
     then check the results using `tree` command
 
-    tree
-    .
-    `-- dir1
-        `-- dir2
-            `-- dir3
-                `-- dir4
-    
-    5 directories, 0 files
+        tree
+        .
+        `-- dir1
+            `-- dir2
+                `-- dir3
+                    `-- dir4
+        
+        5 directories, 0 files
 7. Show commands that create files in different directories
    `touch dir1/dir2/example.txt`
 8. Show how to access these files using relative and absolute paths.
-     jstepanian@jstepanian ~/Documents/AppliedBioinfo/work/dir
-    $ tree
-    .
-    `-- dir1
-        `-- dir2
-            |-- dir3
-            |   `-- dir4
-            `-- example.txt
-    
-    5 directories, 1 file
+
+        jstepanian@jstepanian ~/Documents/AppliedBioinfo/work/dir
+        $ tree
+        .
+        `-- dir1
+            `-- dir2
+                |-- dir3
+                |   `-- dir4
+                `-- example.txt
+        
+        5 directories, 1 file
 
 
 
