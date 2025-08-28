@@ -133,7 +133,7 @@ So now I have the following structure:
         `-- snpEff_summary.html
     
     7 directories, 27 files
-## Questions 5 to 10 
+## Questions 5 to 8 
 5. What version is your samtools command in the bioinfo environment?
     Program: samtools (Tools for alignments in the SAM format)
     Version: 1.22.1 (using htslib 1.22.1)
