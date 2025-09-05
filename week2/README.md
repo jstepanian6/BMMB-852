@@ -107,8 +107,50 @@ The output goes like:
     15198 pseudogene
 Meaning that humans have 21,547 genes. 
 
-## TODO
-1.  Is there a feature type that you may have not heard about before? What is the feature and how is it defined? (If there is no such feature, pick a common feature.)
-2.  What are the top-ten most annotated feature types (column 3) across the genome?
-3.  Having analyzed this GFF file, does it seem like a complete and well-annotated organism?
-4.  Share any other insights you might note.
+## Feature 
+Is there a feature type that you may have not heard about before? What is the feature and how is it defined? (If there is no such feature, pick a common feature.)
+J gene segment: a short stretch of DNA that recognizes an antigen (joining) that plays a role in VDJ recombination, a process by which T cells and B cells randomly assemble different gene-segments-known as variable (V), diversity (D) and joining (J) genes.  
+## Top ten most annotated feature types (column 3) 
+
+    $ zcat Homo_sapiens.GRCh38.115.chr.gff3.gz | cut -f 3 | grep gene | sort | uniq -c | sort 
+          1 #!genebuild-last-updated 2025-05
+         29 C_gene_segment
+         42 D_gene_segment
+         97 J_gene_segment
+        253 V_gene_segment
+      15198 pseudogene
+      21547 gene
+      41946 ncRNA_gene
+
+## Is a complete and well-annotated organism?
+Is one of the most complete genomes but there is still a lot to do especially with those genes annotated as pseudo-genes. 
+## Share any other insights you might note.
+I've found interesting is the fact that there's a huge chromosome (chr 2) while mitochondrial DNA is very small and becomes the powerhouse of the cell. 
+
+    jstepanian@jstepanian ~/Documents/AppliedBioinfo/week2
+    $ zcat Homo_sapiens.GRCh38.115.chr.gff3.gz | grep "sequence-region"
+    ##sequence-region   1 1 248956422
+    ##sequence-region   10 1 133797422
+    ##sequence-region   11 1 135086622
+    ##sequence-region   12 1 133275309
+    ##sequence-region   13 1 114364328
+    ##sequence-region   14 1 107043718
+    ##sequence-region   15 1 101991189
+    ##sequence-region   16 1 90338345
+    ##sequence-region   17 1 83257441
+    ##sequence-region   18 1 80373285
+    ##sequence-region   19 1 58617616
+    ##sequence-region   2 1 242193529
+    ##sequence-region   20 1 64444167
+    ##sequence-region   21 1 46709983
+    ##sequence-region   22 1 50818468
+    ##sequence-region   3 1 198295559
+    ##sequence-region   4 1 190214555
+    ##sequence-region   5 1 181538259
+    ##sequence-region   6 1 170805979
+    ##sequence-region   7 1 159345973
+    ##sequence-region   8 1 145138636
+    ##sequence-region   9 1 138394717
+    ##sequence-region   MT 1 16569
+    ##sequence-region   X 1 156040895
+    ##sequence-region   Y 1 57227415
