@@ -109,6 +109,8 @@ Meaning that humans have 21,547 genes.
 
 ## Feature 
 Is there a feature type that you may have not heard about before? What is the feature and how is it defined? (If there is no such feature, pick a common feature.)
+
+
 J gene segment: a short stretch of DNA that recognizes an antigen (joining) that plays a role in VDJ recombination, a process by which T cells and B cells randomly assemble different gene-segments-known as variable (V), diversity (D) and joining (J) genes.  
 ## Top ten most annotated feature types (column 3) 
 
