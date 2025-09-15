@@ -1,4 +1,8 @@
 # Week 3 
+
+This assignment is for learning/practicing how to load and visualize a fasta and gff files in IGV.
+
+
 ## Visualizing genome and annotations relative to the genome 
 I choose *Acinetobacter baumannii* genome (gca_000069245.ASM6924v1.62). It has 4 fragments: 
 
