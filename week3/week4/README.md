@@ -6,7 +6,8 @@
 
 
 Using "fastq-dump" version 3.0.0 from sratools packages 
-for i in $(cat accessionNumbers.txt); do fastq-dump --gzip --split-files $i &> ${i}_fastqdump.log; done
+    for i in $(cat accessionNumbers.txt); do fastq-dump --gzip --split-files $i &> ${i}_fastqdump.log; done
+
 
 
 
