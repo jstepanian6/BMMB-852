@@ -1,13 +1,18 @@
-<img width="1848" height="1170" alt="image" src="https://github.com/user-attachments/assets/edd0362a-d7bf-427c-9a38-399f3c812b14" />
 
 
+<img width="1848" height="1170" alt="image" src="https://github.com/user-attachments/assets/f3f6c0ac-95a8-4fc5-b0f7-522244188c3b" />
 
-<img width="1848" height="1170" alt="image" src="https://github.com/user-attachments/assets/9c024883-2ee9-4de9-8dbd-f1ddf5f8ca60" />
+Identify the accession numbers for the genome and write the commands to download the data. Make your commands reusable and reproducible.
 
+Now use IGV to visualize the genome and the annotations relative to the genome.
 
-Using "fastq-dump" version 3.0.0 from sratools packages 
-    for i in $(cat accessionNumbers.txt); do fastq-dump --gzip --split-files $i &> ${i}_fastqdump.log; done
+As a bioinformatician you should develop an ability to evaluate what you see.
 
+How big is the genome, and how many features of each type does the GFF file contain? What is the longest gene? What is its name and function? You may need to search other resources to answer this question. Look at other gene names. Pick another gene and describe its name and function.
 
+Look at the genomic features, are these closely packed, is there a lot of intragenomic space? Using IGV estimate how much of the genome is covered by coding sequences.
 
+Find alternative genome builds that could be used to perhaps answer a different question (find their accession numbers). Considering the focus of the paper, think about what other questions you could answer if you used a different genome build.
+
+Write and submit your report to your repository.
 
