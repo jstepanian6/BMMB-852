@@ -177,7 +177,11 @@ And it's annotations
 ## Visualizing 
 
 Now use IGV to visualize the genome and the annotations relative to the genome.
+<img width="1854" height="1175" alt="image" src="https://github.com/user-attachments/assets/af6e23ef-2dcb-43c1-b0cf-5d401ba8d85e" />
 
+## Genome features 
+### Genome size 
+TODO
 As a bioinformatician you should develop an ability to evaluate what you see.
 
 How big is the genome, and how many features of each type does the GFF file contain? What is the longest gene? What is its name and function? You may need to search other resources to answer this question. Look at other gene names. Pick another gene and describe its name and function.
