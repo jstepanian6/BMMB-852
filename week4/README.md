@@ -1,5 +1,5 @@
 # Week 4
-In this assignment we will learn how to access genomic data starting by a reference genome 
+In this assignment we will learn how to access genomic data starting by a reference genome, my assigned group is number 3 so I'll be working with the *S. aureus 
 ## Identifing accession number & Downloading
 Since the long term purpose of this is to reproduce the paper. I will start by checking the exact same reference that they used: 
 <img width="1848" height="1170" alt="image" src="https://github.com/user-attachments/assets/c0c9bc9a-6969-42ce-92a1-f489ab5d254d" />
@@ -211,8 +211,9 @@ cat *gff | grep -v "#" | cut -f 3 |  sort | uniq -c
      59 tRNA
 ```
 ### Longest gene 
-
-What is the longest gene? What is its name and function? You may need to search other resources to answer this question. Look at other gene names. Pick another gene and describe its name and function. TODO
+To find what is the longest gene we could code it trying to get the differences betweeen start and end position using the gff file columns and then retrinving that gene information. But I think that is an easier way to search on google. 
+There is no single definitive "longest" gene in *Staphylococcus aureus* because gene length can vary between strains and the annotation of a "gene" (whether it's a coding sequence or includes regulatory regions) can differ. However, mecDNA, the DNA carrying the methicillin resistance gene, is a substantial genetic element, around 51-52 kilobases long, that contains many genes and is often considered a significant component of the *S. aureus* genome associated with antibiotic resistance: 
+- MecDNA: The complete mecDNA region found in methicillin-resistant S. aureus (MRSA) is a large DNA sequence, approximately 51,669 base pairs (bp) in length, that carries the essential mecA gene, responsible for methicillin resistance.
 
 ### Genomic features visualization
 Look at the genomic features, are these closely packed, is there a lot of intragenomic space? Using IGV estimate how much of the genome is covered by coding sequences.
