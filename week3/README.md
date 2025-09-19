@@ -45,7 +45,7 @@ Output & Q&A:
 Regarding the features: 
 
     jstepanian@jstepanian ~/Documents/AppliedBioinfo/week3
-    $ cat *gff3 Acinetobacter_baumannii_aye_gca_000069245.ASM6924v1.*gff3 | grep -v "#" | cut -f 3 |  sort | uniq -c 
+    $ cat Acinetobacter_baumannii_aye_gca_000069245.ASM6924v1.*gff3 | grep -v "#" | cut -f 3 |  sort | uniq -c 
        7424 CDS
          20 biological_region
           2 chromosome
