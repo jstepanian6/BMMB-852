@@ -181,14 +181,56 @@ Now use IGV to visualize the genome and the annotations relative to the genome.
 
 ## Genome features 
 ### Genome size 
-TODO
-As a bioinformatician you should develop an ability to evaluate what you see.
+```
+cat *gff | cut -f 1 | sort | uniq
 
-How big is the genome, and how many features of each type does the GFF file contain? What is the longest gene? What is its name and function? You may need to search other resources to answer this question. Look at other gene names. Pick another gene and describe its name and function.
+```
+The output is 
 
+    #!genome-build ASM1342v1
+    #!genome-build-accession NCBI_Assembly:GCA_000013425.1
+    #!gff-spec-version 1.21
+    #!processor NCBI annotwriter
+    ###
+    ##gff-version 3
+    ##sequence-region CP000253.1 1 2821361
+    ##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=93061
+    CP000253.1
+
+The genome size of *S. aureus* is 2'821,361 pb 
+### Features 
+```
+cat *gff | grep -v "#" | cut -f 3 |  sort | uniq -c 
+   2892 CDS
+     77 exon
+   2967 gene
+      2 pseudogene
+      2 pseudogenic_tRNA
+     16 rRNA
+      1 region
+     59 tRNA
+```
+### Longest gene 
+
+What is the longest gene? What is its name and function? You may need to search other resources to answer this question. Look at other gene names. Pick another gene and describe its name and function. TODO
+
+### Genomic features visualization
 Look at the genomic features, are these closely packed, is there a lot of intragenomic space? Using IGV estimate how much of the genome is covered by coding sequences.
+<img width="1859" height="402" alt="image" src="https://github.com/user-attachments/assets/23cd1f49-73f5-4b6f-9cec-f4a23e300500" />
+Not really, the intragenomic space is very small which makes sense for a bacterial genome. 
 
-Find alternative genome builds that could be used to perhaps answer a different question (find their accession numbers). Considering the focus of the paper, think about what other questions you could answer if you used a different genome build.
+## Alternative genome builds that can be used 
+The paper has the goal to characterize gene alterations to identify the underlying mechanisms of the bacteriostatic effect of propionate on MRSA using a transcriptomic approach. In the context of bacterial resistance something that can be explored is trying to have prevalence of the variants associated with antimicrobial resistance using multiple genome assemblies from a region or even worldwide.
+For this purpose I search for *S. aureus* genomes at NCBI genomes finding 116,772. 
+<img width="1852" height="1120" alt="image" src="https://github.com/user-attachments/assets/c3b3c063-0e52-4cb1-b611-36eb7ffed315" />
 
-Write and submit your report to your repository.
-
+Other question that might be asked changing the genome build are:
+- Using genome builds from different S. aureus strains (like Newman, N315, Mu50, or MW2) could reveal whether propionate's metabolic effects are conserved across lineages or if certain strains have unique resistance mechanisms
+- Accessory gene impacts: Different genome builds would capture strain-specific genes that might influence propionate susceptibility, particularly mobile genetic elements and strain-specific metabolic genes
+- Comparing transcriptomes against HA-MRSA genome builds (like N315 or Mu50) versus CA-MRSA builds could reveal different metabolic vulnerabilities
+- Vancomycin-resistant strains: Using VRSA genome builds could reveal if propionate effectiveness changes in strains with existing antibiotic resistance mechanisms
+- Methicillin-susceptible S. aureus (MSSA): Comparing against MSSA genome builds could isolate the specific impact of methicillin resistance genes on propionate response
+- Metabolic pathway completeness: Different strains may have variations in the purine, riboflavin, and glycine/serine/threonine pathways identified in this study - using their genome builds could reveal which pathway components are essential versus dispensable
+- Regulatory network differences: Strain-specific transcriptional regulators could show different propionate-responsive gene networks
+- Personalized treatment prediction: Using genome builds from clinical isolates could help predict which patient strains might be most susceptible to propionate therapy
+- Co-infection dynamics: Using genome builds from other pathogens could explore propionate's effects in polymicrobial infections
