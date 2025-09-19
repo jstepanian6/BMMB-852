@@ -22,8 +22,7 @@ This is also evident in the upper tab in IGV.
 ## Genome size and features 
 I reused code from the previous assignment 
 
-    jstepanian@jstepanian ~/Documents/AppliedBioinfo/week3
-    $ cat *gff3 | cut -f 1 | sort | uniq
+     cat *gff3 | cut -f 1 | sort | uniq
 Output & Q&A:
 	
 
