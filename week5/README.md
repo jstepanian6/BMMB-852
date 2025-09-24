@@ -31,7 +31,7 @@
   ``` seqkit stats $FASTQ ```
     #TODO Fastqc
 ## Comparing sequencing platforms
-Compare sequencing platforms:
+TODO Compare sequencing platforms:
 
 Search the SRA for another dataset for the same genome, but generated using a different sequencing platform (e.g., if original data was Illumina select PacBio or Oxford Nanopore).
 Briefly compare the quality or characteristics of the datasets from the two platforms.
