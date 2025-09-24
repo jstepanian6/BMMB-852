@@ -12,7 +12,8 @@
   ``` for i in $(cat list_SRA_ids.txt); do bash get_fastq.sh $i 137931; done ```
   #### Downloading only 10x coverage 
   For *S. aureus* I chose 137931 reads based on the coverage formula that indicates 
-  > Coverage (C) ≈ (N_spots × bases_per_spot) / genome_size 
+  > Coverage (C) ≈ (N_spots × bases_per_spot) / genome_size
+
   Considering that *S. aureus* genome size corresponds to 2.8 Mb = 2,800,000 bases and the desired coverage is 10×, we need 28,000,000 bases. From the run info we have an average of total spots = 15,754,542 and a total bases = 3.2 Gb = 3,200,000,000 bases. 
   So, bases per spot = 3,200,000,000 / 15,754,542 ≈ 203 bases/spot
   #### Quality assessment
