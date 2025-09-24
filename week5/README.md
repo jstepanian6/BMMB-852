@@ -9,7 +9,13 @@
   ### Downloading SRR number(s)
   A new script was created for this purpose: get_fastq.sh
   This script can be executed using a for loop that reads all the accession ids from another file as follows 
-  ``` for i in $(cat list_SRA_ids.txt); do bash get_fastq.sh $i 137931; done ```
+
+  
+  ``` 
+  for i in $(cat list_SRA_ids.txt); do bash get_fastq.sh $i 137931; done
+  ```
+  
+  
   #### Downloading only 10x coverage 
   For *S. aureus* I chose 137931 reads based on the coverage formula that indicates 
   > Coverage (C) ≈ (N_spots × bases_per_spot) / genome_size
