@@ -8,7 +8,11 @@
   A new script was created that includes all the commands used in the previous assigment for downloading the reference genome. Refer to get_genome.sh 
   ### Downloading SRR number(s)
   A new script was created for this purpose: get_fastq.sh
-  This script can be executed using a for loop that reads all the accession ids from another file as follows 
+  To both scripts created in this assignment I added excecution permissions using 
+  ```
+  chmod +x get_fastq.sh
+  ```
+  This script can be executed using a for loop that reads all the accession ids from another file as follows: 
 
   
   ``` 
