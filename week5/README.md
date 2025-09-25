@@ -46,8 +46,9 @@
   file                       format  type  num_seqs     sum_len  min_len  avg_len  max_len
   reads/SRR21835901_1.fastq  FASTQ   DNA    137,931  13,931,031      101      101      101
   reads/SRR21835901_2.fastq  FASTQ   DNA    137,931  13,931,031      101      101      101
-   ``` 
-    #TODO Fastqc
+   ```
+
+  #TODO Fastqc
 ## Comparing sequencing platforms
 I searched the SRA for another dataset for the same genome, but generated using a different sequencing platform, in this case, PacBio: 
 
