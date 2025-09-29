@@ -48,7 +48,6 @@
   reads/SRR21835901_2.fastq  FASTQ   DNA    137,931  13,931,031      101      101      101
    ```
 
-  #TODO Fastqc
 ## Comparing sequencing platforms
 I searched the SRA for another dataset for the same genome, but generated using a different sequencing platform, in this case, PacBio: 
 
@@ -59,4 +58,14 @@ I downloaded the same number of reads (137931), using the get_fastq.sh command. 
 file                       format  type  num_seqs      sum_len  min_len  avg_len  max_len
 reads/SRR33150860_1.fastq  FASTQ   DNA    137,931  789,806,659      455  5,726.1   24,023
  ```
-Briefly compare the quality or characteristics of the datasets from the two platforms. #TODO
+Aditionally, fastqc was performed for all the reads obtain in this assignment using the code of the file get_fastqc.sh that was excecuted using: 
+```
+bash get_fastqc.sh
+``` 
+Contrasting PacBio results (SRR33150860) with Illumina sequences (I randomly used any of the previously obtained accessions of the PRJNA887926
+
+  PacBio looks like this: 
+  <img width="1847" height="873" alt="image" src="https://github.com/user-attachments/assets/2f99cbcf-c2d5-4a83-87c4-1f8c2a17c64d" />
+
+  While Illumina has way shorter reads: 
+  <img width="1847" height="873" alt="image" src="https://github.com/user-attachments/assets/7b460828-4260-4c5b-9dce-760f44207c58" />
