@@ -1,3 +1,4 @@
+#!/bin/bash
 set -uexo pipefail
 
 ## Parameter number 1 is the SRR number
@@ -12,3 +13,6 @@ fastq-dump -X 137931 -F --outdir $READ_DIR --split-files $1
 
 #Stats 
 seqkit stats $READ_DIR/${SRR}_1.fastq $READ_DIR/${SRR}_2.fastq
+
+#Fastq 
+fastqc -o 
