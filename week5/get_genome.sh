@@ -1,3 +1,4 @@
+#!/bin/bash
 set -uexo 
 ACC=GCA_000013425.1
 GENBANK_ACC=NC_007793.1
@@ -10,4 +11,3 @@ bio fetch $ACC -format fasta > $ACC.fa
 
 ##Get the annotation
 efetch -db nuccore -format gff -id $ACC > $ACC.gff
-
