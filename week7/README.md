@@ -1,5 +1,23 @@
 # Week 7 
 This is the README file for assignment number 7. Reusing code described in [week6](https://github.com/jstepanian6/BMMB-852/tree/main/week6). 
+# Genomic Analysis Pipeline 
+A Makefile-based workflow for downloading reference genomes, fetching sequencing reads from SRA, performing alignment, and generating coverage files.
+## Overview
+This pipeline automates the process of:
+1.  Downloading a reference genome from GenBank
+2.  Fetching paired-end sequencing reads from the Sequence Read Archive (SRA)
+3.  Indexing the reference genome
+4.  Aligning reads to the reference using BWA-MEM
+5.  Generating alignment statistics
+6.  Creating bedGraph and BigWig coverage files
+
+    make
+This will output: 
+
+    #
+    # Usage: make [all|refs|fastq|index|align|clean|stats|bedgraph]
+    #
+Which means that references can be downloaded, and it will create 
 
 ## Diferences between alignment files 
 
