@@ -5,11 +5,12 @@ This guide focuses on annotating variants using SnpEff from variant calling proc
 -   annotate-multi: Annotate a merged multisample VCF file
 First we need to install and set up snpEff using the following commands: 
 
+xxxx
+
     conda install -c bioconda snpeff
     snpEff databases | grep -i "aureus" 
     snpEff download Staphylococcus_aureus_subsp_aureus_usa300_fpr3757
     cp /home/jstepanian/micromamba/envs/snpEff/share/snpeff-5.3.0a-1/snpEff.config .
-
 
 
 Then, we need to perform variant calling as it was described and explained in the previous weeks using the makefile and the following commands: 
