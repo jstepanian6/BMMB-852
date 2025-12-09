@@ -99,3 +99,29 @@ Then excuted
                   bam/UHR_1.bam \
                   bam/UHR_2.bam \
                   bam/UHR_3.bam
+## Discussion about the matrix 
+
+**ENSG00000206195.10** - This gene shows very strong expression, particularly in the UHR samples:
+
+-   HBR samples: 10, 4, 7 counts (low)
+-   UHR samples: 184, 156, 168 counts (very high and consistent)
+
+
+**ENSG00000100181.21** - Another highly expressed gene with good replication:
+
+-   HBR samples: 20, 22, 19 counts (consistent, moderate)
+-   UHR samples: 140, 92, 117 counts (higher, with UHR_2 slightly lower)
+
+**ENSG00000271127.1** - Shows very low/absent expression in HBR but strong in UHR:
+
+-   HBR samples: 0, 1, 0 counts
+-   UHR samples: 16, 9, 19 counts
+
+## Low/Zero Expression Genes
+
+Many genes at the top of your matrix (like ENSG00000277248.1, ENSG00000274237.1, etc.) show zero counts across all samples. These could be:
+
+-   Genes not expressed in these tissue types
+-   Very lowly expressed genes below detection threshold
+-   Genes where the RNA-seq depth wasn't sufficient
+
